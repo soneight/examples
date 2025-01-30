@@ -9,3 +9,5 @@ int main()
         assert(gl::get_error() == gl::enums::Error::Enum);
     });
 }
+
+// Ⓒ 2025 Oleg'Ease'Kharchuk ᦒ
