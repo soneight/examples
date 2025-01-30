@@ -24,3 +24,5 @@ namespace son8::examples::overglad {
         }
     };
 }
+
+// Ⓒ 2025 Oleg'Ease'Kharchuk ᦒ

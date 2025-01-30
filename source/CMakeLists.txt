@@ -9,7 +9,4 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(glfw)
 
-add_executable(${SON8PROJ} main.cxx)
-target_link_libraries(${SON8PROJ} glfw)
-
 add_subdirectory(overglad)

@@ -16,3 +16,5 @@ namespace son8::examples::overglad {
         glfwTerminate();
     }
 }
+
+// Ⓒ 2025 Oleg'Ease'Kharchuk ᦒ
