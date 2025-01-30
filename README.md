@@ -1,7 +1,7 @@
-# PROJECT
+# EXAMPLES
 
-> Project Short Description
+> Examples for all SONEIGHT organization projects
 
-Project Long Overview
+- [overglad](https://github.com/soneight/overglad)
 
 ###### each folder MAY contain README with additional information
