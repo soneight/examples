@@ -1,10 +1,9 @@
 FetchContent_Declare(
-    son8overglad
-    GIT_REPOSITORY https://github.com/soneight/overglad.git
-    GIT_TAG        069ec4a9a4191340d1c06c3f06f226d7b35d9e49
+    son8__overglad
+    GIT_REPOSITORY https://github.com/son8fork/overglad-beta.git
+    GIT_TAG        beta
 )
-
-FetchContent_MakeAvailable(son8overglad)
+FetchContent_MakeAvailable(son8__overglad)
 
 add_subdirectory(window)
 link_libraries(son8::overglad-window)
