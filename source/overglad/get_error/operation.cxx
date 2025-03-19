@@ -6,7 +6,7 @@ int main()
     app::Window window;
     window.run([]() {
         gl::end();
-        assert(gl::get_error() == gl::enums::Error::Operation);
+        assert(gl::get< gle::Error>() == gle::Error::Operation);
     });
 }
 

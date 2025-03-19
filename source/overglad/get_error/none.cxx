@@ -5,7 +5,7 @@ int main()
 {
     app::Window window;
     window.run([]() {
-        assert(gl::get_error() == gl::enums::Error::No);
+        assert(gl::get< gle::Error >() == gle::Error::No);
     });
 }
 
