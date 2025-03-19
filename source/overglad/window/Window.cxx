@@ -5,7 +5,7 @@ namespace son8::examples::overglad {
     Window::Window()
     {
         glfwInit();
-        window = glfwCreateWindow(640, 480, "", nullptr, nullptr);
+        window = glfwCreateWindow(640, 480, "son8::examples::overglad::Window", nullptr, nullptr);
         glfwMakeContextCurrent(window);
         gladLoadGL(glfwGetProcAddress);
         glfwSwapInterval(1);
