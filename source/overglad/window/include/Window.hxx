@@ -4,8 +4,10 @@
 namespace son8::examples::overglad {
     class Window final {
         GLFWwindow *window;
+        inline static unsigned const Default_Height = 360;
+        inline static unsigned const Default_Width = 640;
     public:
-        Window();
+        Window( unsigned w = Default_Width, unsigned h = Default_Height );
         ~Window();
 
         operator GLFWwindow *() const noexcept { return window; }

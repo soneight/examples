@@ -2,18 +2,18 @@
 #include <glad/gl.h>
 
 namespace son8::examples::overglad {
-    Window::Window()
+    Window::Window( unsigned w, unsigned h )
     {
-        glfwInit();
-        window = glfwCreateWindow(640, 360, "son8::examples::overglad::Window", nullptr, nullptr);
-        glfwMakeContextCurrent(window);
-        gladLoadGL(glfwGetProcAddress);
-        glfwSwapInterval(1);
+        glfwInit( );
+        window = glfwCreateWindow( w, h, "son8::examples::overglad::Window", nullptr, nullptr);
+        glfwMakeContextCurrent( window );
+        gladLoadGL( glfwGetProcAddress );
+        glfwSwapInterval( 1 );
     }
     Window::~Window()
     {
-        glfwDestroyWindow(window);
-        glfwTerminate();
+        glfwDestroyWindow( window );
+        glfwTerminate( );
     }
 }
 
