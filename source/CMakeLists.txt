@@ -3,10 +3,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 FetchContent_Declare(
-    glfw
-    GIT_REPOSITORY https://github.com/son8fork/glfw.git
-    GIT_TAG        9bfd5e25bf8b696e8119583752f657d111c8be47
+    son8__windowed
+    GIT_REPOSITORY https://github.com/son8fork/windowed.git
+    GIT_TAG        patch-1
 )
-FetchContent_MakeAvailable(glfw)
+FetchContent_MakeAvailable(son8__windowed)
 
 add_subdirectory(overglad)
