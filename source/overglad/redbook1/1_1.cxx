@@ -1,10 +1,12 @@
 #include <header.hxx>
 #define SON8_OVERGLAD_INCLUDE_DEPRECATED
 #include <son8/overglad/v1_1.hxx>
+#include <son8/windowed.hxx>
 
 int main( )
 {
-    app::Window window{ 640, 640 };
+    app::Config config{ SON8_OVERGLAD_VERSION, app::Config::Height{ 640u } } ;
+    app::Windowed window{ config };
 
     window.run( [ ]( ) {
         glClearColor( 0.f, 0.f, 0.f, 0.f );
@@ -20,3 +22,5 @@ int main( )
         glFlush( );
     } );
 }
+
+// Ⓒ 2025 Oleg'Ease'Kharchuk ᦒ

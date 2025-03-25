@@ -1,0 +1,3 @@
+add_library( ${SON8PROJ}-overglad-header INTERFACE )
+add_library( son8::examples-overglad-header ALIAS ${SON8PROJ}-overglad-header )
+target_include_directories( ${SON8PROJ}-overglad-header INTERFACE include )

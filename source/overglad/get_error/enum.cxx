@@ -1,13 +1,13 @@
 #include <header.hxx>
 #include <son8/overglad/v1_1.hxx>
+#include <son8/windowed.hxx>
 
-int main()
-{
-    app::Window window;
-    window.run([]() {
+int main( ) {
+    app::Windowed window;
+    window.run( [ ]( ) {
         gl::begin(static_cast< gl::enums::Draw >(8888888));
         assert(gl::get< gle::Error >() == gl::enums::Error::Enum);
-    });
+    } );
 }
 
 // Ⓒ 2025 Oleg'Ease'Kharchuk ᦒ
