@@ -7,3 +7,4 @@ add_executable( overglad-get_error-enum get_error/enum.cxx )
 
 add_executable( overglad-redbook-1_1 redbook1/1_1.cxx )
 add_executable( overglad-redbook-1_2 redbook1/1_2.cxx )
+add_executable( overglad-redbook-1_3 redbook1/1_3.cxx )
