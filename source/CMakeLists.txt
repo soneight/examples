@@ -16,4 +16,12 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable( son8__windowed )
 
+if( MSVC )
+    message( STATUS "${SON8PROJ}: Its MSVC add W4 compile options " )
+    add_compile_options( /W4 )
+else( )
+    message ( STATUS "${SON8PROJ}: Not MSVC, add Wall, Wextra compile options" )
+    add_compile_options( -Wall -Wextra )
+endif( )
+
 add_subdirectory( overglad )
