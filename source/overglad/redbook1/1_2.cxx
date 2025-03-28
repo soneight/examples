@@ -1,5 +1,5 @@
 #include <header.hxx>
-#define SON8_OVERGLAD_INCLUDE_DEPRECATED
+// #define SON8_OVERGLAD_INCLUDE_DEPRECATED
 #include <son8/overglad/v1_1.hxx>
 
 #include <chrono>
@@ -13,8 +13,8 @@ int main() {
     } };
 
     window.run( [ ]( ) {
-        glClearColor( 0.f, 0.f, 0.f, 0.f );
-        glClear( GL_COLOR_BUFFER_BIT );
+        gl::clear_color( 0.f, 0.f );
+        gl::clear( gle::Clearbit::Color );
         gl::color( 1.f, 1.f, 1.f );
         gl::matrix_mode( gl::enums::MatrixMode::Project );
         gl::load_identity( );
@@ -25,7 +25,7 @@ int main() {
             gl::vertex(  .5f,  .5f );
             gl::vertex(  .5f, -.5f );
         gl::end( );
-        glFlush( );
+        gl::flush( );
         std::this_thread::sleep_for( std::chrono::milliseconds( 10 ) );
     } );
 

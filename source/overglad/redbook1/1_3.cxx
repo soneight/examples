@@ -1,7 +1,6 @@
 #include <header.hxx>
 #define SON8_OVERGLAD_INCLUDE_DEPRECATED
 #include <son8/overglad/v1_1.hxx>
-#define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
 
 #include <optional>
