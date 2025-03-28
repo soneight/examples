@@ -4,8 +4,8 @@ set( CMAKE_CXX_EXTENSIONS OFF )
 
 FetchContent_Declare(
     son8__overglad
-    GIT_REPOSITORY https://github.com/son8fork/overglad-beta.git
-    GIT_TAG        beta-1
+    GIT_REPOSITORY https://github.com/son8fork/overglad.git
+    GIT_TAG        minor-1
 )
 FetchContent_MakeAvailable( son8__overglad )
 
