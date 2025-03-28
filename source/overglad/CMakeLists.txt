@@ -1,5 +1,5 @@
 add_subdirectory( header )
-link_libraries( son8::overglad son8::windowed son8::examples-overglad-header )
+link_libraries( son8::examples-overglad-header )
 
 add_executable( overglad-get_error-none get_error/none.cxx )
 add_executable( overglad-get_error-operation get_error/operation.cxx )
